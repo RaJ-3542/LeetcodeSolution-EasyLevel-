@@ -1,0 +1,27 @@
+class Solution {
+public:
+    bool isIsomorphic(string str, string t) {
+
+        unordered_map <char,char> mp;
+        unordered_map <char,bool> mp2;
+
+        for(int j = 0; j<str.length();j++){
+            if(mp.count(str[j])){
+                if(mp[str[j]] != t[j]){
+                    return false;
+                }
+            }
+            else{
+                if(mp2[t[j]]){
+                    return false;
+                }
+                mp[str[j]] = t[j];
+                mp2[t[j]] = true;
+            }
+            
+
+        }
+        return true;
+        
+    }
+};
