@@ -1,0 +1,32 @@
+class Solution {
+public:
+    vector<int> countBits(int n) {
+
+        int i;
+        vector<int> res;
+
+        for(i = 0 ; i <=n;i++){
+            int cnt = 0;
+
+            for(int j = 31;j>=0;j--){
+                int k = i>>j;
+                if(k&1)
+                    cnt += 1;
+                else
+                    continue;
+            
+            }
+
+            res.push_back(cnt);
+
+
+
+
+
+
+
+        }
+        return res;
+        
+    }
+};
