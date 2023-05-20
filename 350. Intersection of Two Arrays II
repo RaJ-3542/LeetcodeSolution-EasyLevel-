@@ -1,0 +1,63 @@
+class Solution {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+
+
+    
+    sort(begin(nums2), end(nums2));
+    sort(begin(nums1), end(nums1));
+
+    vector<int> res;
+    int j = 0;  
+    int i = 0;  
+
+    
+
+        // if(nums1.size()>nums2.size()){
+        //     return intersect(nums2,nums1);
+        // }
+
+        // vector<int> res;
+        // for(int i = 0; i<nums1.size();i++){
+        //     int a = nums1[i];
+        //     for(int j = 0; j<nums2.size();j++){
+        //         if(nums2[j]==a){
+        //             res.push_back(a);
+        //             break;
+        //         }
+        //     }
+
+        while (j < nums1.size() && i < nums2.size())
+      if (nums1[j] < nums2[i]) {
+        ++j;
+      } else if (nums1[j] > nums2[i]) {
+        ++i;
+      } else {
+        res.push_back(nums1[j]);
+        ++j;
+        ++i;
+      }
+
+    return res;
+
+
+        // unordered_map<int,int> cnt;
+
+        // for(const int a : nums1){
+        //     ++cnt[a];
+        // }
+        // //     int size = min(nums1.size(),nums2.size());
+        // //     if(res.size()==size){
+        // //         break;
+        // //     }
+        // // }
+
+        // for(const int b: nums2){
+        //     if(const auto i = cnt.find(b));
+        //          i != cend(cnt) && i->second-- > 0)
+        //         res.push_back(b);
+        // }
+        // return res;
+        
+    }
+};
