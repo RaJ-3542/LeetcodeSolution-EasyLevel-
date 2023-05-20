@@ -1,0 +1,25 @@
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+
+        # n = len(magazine)
+        
+
+        # for i in range(n):
+            
+        #     if magazine[i] in ransomNote:
+        #         print("got in")
+                
+        #         ransomNote.replace(magazine[i],'',1)
+
+        cnt1 = collections.Counter(ransomNote)
+        cnt2 = collections.Counter(magazine)
+        # print(ransoe(len(ransomNote)):
+        #     if ransomNote[i] != '*':
+        #         return FalsemNote)
+        # for i in rang
+
+        return all(cnt1[c]<= cnt2[c] for c in string.ascii_lowercase)
+            
+
+    
+       
