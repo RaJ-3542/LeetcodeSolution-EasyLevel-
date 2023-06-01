@@ -11,6 +11,9 @@
  */
 class Solution {
 private:
+
+
+
     vector<int> res;
 public:
     void postorder(TreeNode* root){
