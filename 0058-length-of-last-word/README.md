@@ -2,6 +2,7 @@
 
 <p>A <strong>word</strong> is a maximal <span data-keyword="substring-nonempty">substring</span> consisting of non-space characters only.</p>
 
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
