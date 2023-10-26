@@ -29,9 +29,7 @@ public:
             }
             
         }
-        for(auto a : nums){
-            cout<<a<<" ";
-        }
+        
         return sum;
 
         // return accumulate(nums.begin()+1,nums.end()-1,0);
